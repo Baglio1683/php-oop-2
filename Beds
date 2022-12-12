@@ -1,0 +1,11 @@
+<?php
+
+class Beds extends Product
+{
+
+    protected function __construct($weight)
+    {
+        parent::__construct();
+    }
+
+}
