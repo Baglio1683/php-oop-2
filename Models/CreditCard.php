@@ -1,10 +1,7 @@
 <?php 
 
 class CreditCard{
-
-
-
-     function __construct(private string $name,private  int $number,private  int $cvv,private  string $owner_name, private string $owner_surname,private int $expirationMonth,private  int $expirationYear){
+     function __construct(private string $name,private  int $number,private  int $cvv,private  string $owner_name, private string $owner_surname,private int $expirationMonth,private  int $expirationYear, private float $balance){
 
         $this-> name = $name;
         $this->number = $number; 
@@ -12,7 +9,8 @@ class CreditCard{
         $this->owner_name =$owner_name; 
         $this->owner_surname = $owner_surname;
         $this->expirationMonth = $expirationMonth;
-        $this->expirationYear = $expirationYear; 
+        $this->expirationYear = $expirationYear;
+        $this->balance = $balance; 
      }
 
      
