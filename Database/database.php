@@ -18,7 +18,7 @@ $pallina = new Toy($dog, 'PallinaDOg', 10, 'rubber');
 $cuccia = new Bed($cat, 'CucciaCat', 29.99, 15, 20); 
 
 $products = [
-    $crochette,
+    $crocchette,
     $pallina,
     $cuccia
 ];
