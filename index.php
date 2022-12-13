@@ -28,6 +28,17 @@ require_once __DIR__ . '/Database/database.php';
                <div class="card-body">
                    <h5 class="card-title"><?php echo $product->getTitle() ?></h5>
                    <p class="card-text"><?php echo 'il prezzo è: ' . $product->getPrice() .'€'?></p>
+                    <p class="card-text"> <?php echo 'la categoria è: ' . $product->category->get_Name_Category() ?> </p>
+                    <?php if(get_class($product) == 'Food'){ ?> 
+                        <p class="card-text"> <?php echo 'il peso è: ' . $product->getWeight() ?></p>
+                <?php } ?>
+                <?php if(get_class($product) == 'Bed'){ ?> 
+                        <p class="card-text"> <?php echo "L'Altezza è: " . $product->getHeight()?></p>
+                        <p class="card-text"> <?php echo "la Larghezza è: " . $product->getLength()?></p>
+                <?php } ?>
+                <?php if(get_class($product) == 'Toy'){ ?> 
+                        <p class="card-text"> <?php echo 'il materiale è: ' . $product->getMaterial() ?></p>
+                <?php } ?>
               </div>
          </div>
        </div> <?php } ?>

@@ -15,7 +15,7 @@ class Food extends Product
     //METHODS
     
     function getWeight(){
-        $this-> weight;
+        return $this-> weight;
     }
 
 

@@ -18,7 +18,7 @@ class Toy extends Product
      //METHODS 
 
     function getMaterial(){
-        $this-> material;
+       return $this-> material;
     }    
     
 
